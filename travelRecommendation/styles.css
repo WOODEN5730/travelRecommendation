@@ -5,7 +5,16 @@
   background: #222;
   padding: 1rem;
 }
-
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.nav-title {
+   text-decoration: none;
+   color: white;
+}
 .nav-links {
   list-style: none;
   display: flex;
