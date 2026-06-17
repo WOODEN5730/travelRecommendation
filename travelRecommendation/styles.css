@@ -15,7 +15,11 @@
     list-style: none;
     display: flex;
     gap: 1.5rem;
-  }  
+  }
+  .button-color {
+    background-color: green; 
+    color: white;
+  }
   .nav-links a {
     color: white;
     text-decoration: none;
