@@ -25,25 +25,26 @@
   text-decoration: none;
   font-size: 1.1rem;
 }
-
 .nav-links a:hover {
   color: #1db954;
 }
-
 .search-form input {
+  background: url('magnify.png') no-repeat 10px center;
+  background-size: 18px;
+  background-position: right;
   padding: 0.4rem;
-  font-size: 1rem;
-  width: 250px;
-  border-radius: 6px
+  height: 20px;
+  font-size: 1rem; 
+  background-color: white;
+  width: 230px;   
+  border-radius: 6px;
 }
-
 .search-form button {
   padding: 0.4rem 0.8rem;
   margin-left: 0.3rem;
   cursor: pointer;
   border-radius: 6px
 }
-
 .home {
     position: relative;
     height: 100vh;
@@ -53,8 +54,7 @@
     align-items: center;
     color: white;
     text-align: center;
-  }
-  
+  }  
   .overlay {
     position: absolute;
     top: 0;
@@ -62,31 +62,26 @@
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.45); /* darkens background for readability */
-  }
-  
+  }  
   .home-content {
     position: relative;
     z-index: 2;
     max-width: 600px;
-  }
-  
+  }  
   .home-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-  }
-  
+  }  
   .home-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-  }
-  
-  .social-icons img {
+  }  
+   .social-icons img {
     width: 32px;
     margin: 0 10px;
     cursor: pointer;
     transition: transform 0.2s ease;
-  }
-  
+  }  
   .social-icons img:hover {
     transform: scale(1.15);
   }
@@ -99,12 +94,10 @@
   margin: auto;
   color: white;
 }
-
 .about-section h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-
 .about-text {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -116,19 +109,16 @@
   text-align: center;
   padding: 2rem;
 }
-
 .team-section h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-
 .team-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
-
 .team-card {
   width: 250px;
   padding: 1.5rem;
@@ -136,11 +126,9 @@
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
 .team-card h3 {
   margin-bottom: 0.3rem;
 }
-
 .role {
   font-weight: bold;
   color: #0077cc;
