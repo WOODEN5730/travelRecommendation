@@ -41,13 +41,14 @@
 }
 .search-form button {
   padding: 0.4rem 0.8rem;
-  margin-left: 0.3rem;
+  width: 100px;
+  margin-left: 0.3rem; 
   cursor: pointer;
   border-radius: 6px
 }
 .home {
     position: relative;
-    height: 100vh;
+    height: 120vh;
     background: url('Philadelphia.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -70,7 +71,7 @@
   }  
   .home-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
   }  
   .home-content p {
     font-size: 1.2rem;
@@ -85,7 +86,12 @@
   .social-icons img:hover {
     transform: scale(1.15);
   }
- 
+ .social-icons {
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    align-items: center;       /* centers vertically */
+    margin: 0 auto;            /* ensures the block itself is centered */
+}
 /* ABOUT SECTION */
 .about-section {
   text-align: center;
