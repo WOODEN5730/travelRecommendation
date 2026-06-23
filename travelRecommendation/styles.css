@@ -48,13 +48,14 @@
 }
 .home {
     position: relative;
-    height: 120vh;
+    height: 160vh;
     background: url('Philadelphia.jpg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    align-items: flex-start; 
   }  
   .overlay {
     position: absolute;
@@ -65,17 +66,17 @@
     background: rgba(0,0,0,0.45); /* darkens background for readability */
   }  
   .home-content {
-    position: relative;
+    position: relative; 
     z-index: 2;
-    max-width: 600px;
+    max-width: 600px;   
   }  
   .home-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;   
   }  
   .home-content p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;      
   }  
    .social-icons img {
     width: 32px;
@@ -140,3 +141,62 @@
   color: #0077cc;
   margin-bottom: 0.5rem;
 }
+/* Grid container */
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+/* Individual card */
+.result-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover animation */
+.result-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.result-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.result-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+/* Description */
+.result-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+#results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 24px;
+  margin-top: 30px;
+  padding: 10px;
+}
+@media (max-width: 700px) {
+  #results {
+    grid-template-columns: 1fr; /* One column on small screens */
+  }
+}
+

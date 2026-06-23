@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Travel Recommendations</title>
   <link rel="stylesheet" href="styles.css">
+   <script src="travel_recommendation.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -22,17 +23,17 @@
             placeholder="Enter a destination or keyword" 
             name="search"
           />             
-          <button class="button-color" type="submit" >Search</button>
-          <button class="button-color" type="submit">Clear</button>
+          <button id="myBtn" class="button-color" type="button" >Search</button>
+          <button class="button-color" type="reset">Clear</button>
          </form>       
       </nav>   
-
-      <section class="home">
-        <div class="overlay"></div>
-      <div class="home-content">
-      <h1>Welcome to Travel Recommendations</h1>
+       <section class="home">
+       <div class="home-content">
+       <h1>Welcome to Travel Recommendations</h1>
       <p>Your gateway to discovering breathtaking destinations around the world.</p>
-  
+      
+      <div id="results"></div>
+      
       <!-- SOCIAL ICONS -->
   <div class="social-icons">
     <a href="https://www.facebook.com" target="_blank">
