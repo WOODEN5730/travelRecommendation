@@ -19,7 +19,12 @@ async function travelData() {
 
     // Get search text
     const query = document.querySelector("input[name='search']").value.toLowerCase();
-
+   
+    if (query === "") {
+     console.log("Search is empty");
+     return; // stop the function
+    }
+    
     // Filter results
     const filtered = allItems.filter(item =>
       item.name.toLowerCase().includes(query) ||
