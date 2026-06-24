@@ -187,14 +187,14 @@
   color: #555;
   line-height: 1.5;
 }
-#results {
+ /* #results {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 24px;
   margin-top: 30px;
   padding: 10px;
-  /* grid-template-columns: 300px 300px 1fr; */
-}
+  grid-template-columns: 200px 200px 1fr;  
+}  */
 @media (max-width: 700px) {
   #results {
     grid-template-columns: 1fr; /* One column on small screens */
