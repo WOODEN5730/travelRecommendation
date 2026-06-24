@@ -49,24 +49,25 @@
         ]
       }
     ],
-    "temples": [
+          
+  "temples": [
+    {
+      "id": 1,
+      "name": "Angkor Wat, Cambodia, temple", 
+      "imageUrl": "AngkorWat-Cambodia.jpg",
+      "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+    },
+    {
+      "id": 2,
+      "name": "Taj Mahal, India temple",
+      "imageUrl": "TajMahal-India.jpg",
+      "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+    }
+  ],
+     "beaches": [
       {
         "id": 1,
-        "name": "Angkor Wat, Cambodia",
-        "imageUrl": "AngkorWat-Cambodia.jpg",
-        "description": "A UNESCO World Heritage site and the largest religious monument in the world."
-      },
-      {
-        "id": 2,
-        "name": "Taj Mahal, India",
-        "imageUrl": "TajMahal-India.jpg",
-        "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
-      }
-    ],
-    "beaches": [
-      {
-        "id": 1,
-        "name": "Bora Bora, French Polynesia",
+        "name": "Bora Bora, French Polynesia Beach",
         "imageUrl": "BoraBora-French-Polynesia.jpg",
         "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
       },
