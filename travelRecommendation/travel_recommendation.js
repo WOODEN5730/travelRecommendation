@@ -27,8 +27,7 @@ async function travelData() {
     
     // Filter results
     const filtered = allItems.filter(item =>
-      item.name.toLowerCase().includes(query) ||
-      item.description.toLowerCase().includes(query)
+      item.name.toLowerCase().includes(query) 
     );
 
     displayResults(filtered);
