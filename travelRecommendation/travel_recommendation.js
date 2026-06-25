@@ -10,24 +10,52 @@ async function travelData() {
 
     const data = await response.json();
 
-    // Flatten everything into one array
-    const allItems = [
-      ...data.countries.flatMap(country => country.cities),
-      ...data.temples,
-      ...data.beaches
-    ];
+    // Flatten cities
+    const cities = data.countries.flatMap(country =>
+      country.cities.map((city, index) => ({
+        id: index + 1,
+        type: "city",
+        country: country.name,
+        name: city.name.trim(),
+        imageUrl: city.imageUrl,
+        description: city.description.trim()
+      }))
+    );
+
+    // Flatten temples
+    const temples = data.temples.map(t => ({
+      id: t.id,
+      type: "temples",
+      name: t.name.trim(),
+      imageUrl: t.imageUrl,
+      description: t.description.trim()
+    }));
+
+    // Flatten beaches
+    const beaches = data.beaches.map(b => ({
+      id: b.id,
+      type: "beaches",
+      name: b.name.trim(),
+      imageUrl: b.imageUrl,
+      description: b.description.trim()
+    }));
+
+    // Combine all
+    const allItems = [...cities, ...temples, ...beaches];
 
     // Get search text
-    const query = document.querySelector("input[name='search']").value.toLowerCase();
-   
-    if (query === "") {
-     console.log("Search is empty");
-     return; // stop the function
+    const query = document.querySelector("input[name='search']").value.trim().toLowerCase();
+
+    if (!query) {
+      console.log("Search is empty");
+      return;
     }
-    
-    // Filter results
+
+    // Safe filter (never crashes)
     const filtered = allItems.filter(item =>
-      item.name.toLowerCase().includes(query) 
+      (item.name?.toLowerCase() || "").includes(query) ||
+      (item.type?.toLowerCase() || "").includes(query) ||
+      (item.description?.toLowerCase() || "").includes(query)
     );
 
     displayResults(filtered);
@@ -51,27 +79,9 @@ function displayResults(items) {
     card.className = "result-card";
 
     card.innerHTML = `
-      <img src="${item.imageUrl}" alt="${item.name}">
+      <img class="result-img" src="${item.imageUrl}" alt="${item.name}">
       <h3>${item.name}</h3>
       <p>${item.description}</p>
-    `;
-
-    container.appendChild(card);
-  });
-}
-
-function displayResults(data) {
-  const container = document.getElementById("results");
-  container.innerHTML = "";
-
-  data.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "result-card";
-
-    card.innerHTML = `
-    <img class="result-img" src="${item.imageUrl}" alt="${item.name}">
-     <h3>${item.name}</h3>
-    <p>${item.description}</p>
     `;
 
     container.appendChild(card);
