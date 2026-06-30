@@ -1,0 +1,86 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "name": "Australia",
+      "cities": [
+        {
+          "name": "Sydney, Australia",
+          "imageUrl": "Sydney-Australia.jpg",
+          "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
+        },
+        {
+          "name": "Melbourne, Australia",
+          "imageUrl": "Melbourne-Australia.jpg",
+          "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Japan",
+      "cities": [
+        {
+          "name": "Tokyo, Japan",
+          "imageUrl": "Tokyo-Japan.jpg",
+          "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
+        },
+        {
+          "name": "Kyoto, Japan",
+          "imageUrl": "Kyoto-Japan.jpg",
+          "description": "Known for its historic gardens, and traditional tea houses."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Brazil",
+      "cities": [
+        {
+          "name": "Rio de Janeiro, Brazil",
+          "imageUrl": "Rio-de-Janeiro-Brazil.jpg",
+          "description": "A lively city known for its vibrant carnival celebrations, and iconic landmarks."
+        },
+        {
+          "name": "São Paulo, Brazil",
+          "imageUrl": "São-Paulo-Brazil.jpg",
+          "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
+        }
+      ]
+    }
+  ],
+
+  "temples": [
+    {
+      "id": 1,
+      "type": "temples",
+      "name": "Angkor Wat, Cambodia",
+      "imageUrl": "AngkorWat-Cambodia.jpg",
+      "description": "A UNESCO World Heritage site and the largest religious monument in the world."
+    },
+    {
+      "id": 2,
+      "type": "temples",
+      "name": "Taj Mahal, India",
+      "imageUrl": "TajMahal-India.jpg",
+      "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
+    }
+  ],
+
+  "beaches": [
+    {
+      "id": 1,
+      "type": "beaches",
+      "name": "Bora Bora, French Polynesia",
+      "imageUrl": "BoraBora-French-Polynesia.jpg",
+      "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+    },
+    {
+      "id": 2,
+      "type": "beaches",
+      "name": "Copacabana Brazil",
+      "imageUrl": "Copacabana-Beach-Brazil.jpg",
+      "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+    }
+  ]
+}
