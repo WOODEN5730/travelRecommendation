@@ -28,6 +28,14 @@
 .nav-links a:hover {
   color: #1db954;
 }
+#bookNow {
+  padding: 10px;
+  width: 100px;   
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: green;  
+}
 .search-form input {
   background: url('magnify.png') no-repeat 10px center;
   background-size: 18px;
