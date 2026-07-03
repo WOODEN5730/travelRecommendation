@@ -35,6 +35,15 @@
   border-width: 2px;
   border-style: solid;
   border-color: green;  
+  transition: background-color 0.25s ease,
+  color 0.25s ease,
+  font-weight 0.25s ease; 
+}
+#bookNow:hover {
+  color: white;               /* text becomes white */
+  font-weight: bolder;        /* stronger emphasis */
+  background-color: purple;   /* hover background */
+  text-decoration: none;       
 }
 .search-form input {
   background: url('magnify.png') no-repeat 10px center;
