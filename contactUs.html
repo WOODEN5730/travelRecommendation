@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">
@@ -27,26 +26,10 @@
   <section class="home">
     <div class="overlay">
 
-  <!-- CONTACT FORM SECTION -->
-   <section class="contact-section">
-   <h1>Contact Us</h1>
-
-  <form class="contact-form">
-    <label for="name">Name</label>
-    <input type="text" id="name" placeholder="Enter your name" required>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="Enter your email" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" placeholder="Write your message..." required></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
-</section>
-
-  <!-- SOCIAL ICONS -->
-  <div class="social-icons">
+  <div class="page-container">
+  <section class="content-left">
+    <h1>Contact Us</h1>
+     <div class="social-icons">
     <a href="https://www.facebook.com" target="_blank">
       <img src="facebook-logo.png" alt="Facebook">
     </a>
@@ -60,6 +43,22 @@
       <img src="youtube.png" alt="YouTube">
     </a>
   </div>
+   </section>
+
+  <section class="contact-right">
+    <!-- Your contact form goes here -->
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Write your message..." required></textarea>
+    <button type="submit">Submit</button>      
+    </form>
+  </section>
+</section>
  </div>
 </section>
 </body>
