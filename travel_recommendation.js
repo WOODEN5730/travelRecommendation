@@ -82,6 +82,7 @@ function displayResults(items) {
       <img class="result-img" src="${item.imageUrl}" alt="${item.name}">
       <h3>${item.name}</h3>
       <p>${item.description}</p>
+      <button id="bookNow" class="button-color">View Video</button>
     `;
 
     container.appendChild(card);

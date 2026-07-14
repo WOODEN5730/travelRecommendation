@@ -34,7 +34,7 @@
   border-radius: 6px;
   border-width: 2px;
   border-style: solid;
-  border-color: green;  
+  border-color: green;   
   transition: background-color 0.25s ease,
   color 0.25s ease,
   font-weight 0.25s ease; 
