@@ -11,6 +11,33 @@
     gap: 10px;
     color: white;
 }
+img{
+  width : 25px;
+  height: 25px;
+}
+
+.sidebar {
+  display: flex;
+  min-height: 100vh;
+  /* height: 160vh; */   
+}
+.col.left {
+  display: flex;
+  flex: 0 0 140px; 
+   flex-direction: column;       
+  /* background: #f5f5f5; */
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  /* background: url('Philadelphia.jpg') center/cover no-repeat; */
+}
+.right {
+  flex: 1;                /* takes remaining space */
+  /* background: #f5f5f5; */
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -63,16 +90,20 @@
   cursor: pointer;
   border-radius: 6px
 }
+.home-test{
+  background: url('Philadelphia.jpg') center/cover no-repeat;
+   color: white;
+}
 .home {
     position: relative;
     height: 160vh;
     background: url('Philadelphia.jpg') center/cover no-repeat;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-    align-items: flex-start; 
+    align-items: flex-start;  */
   }  
   .overlay {
     position: absolute;
