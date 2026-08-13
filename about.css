@@ -62,8 +62,7 @@ img:hover {
 .col.left {
   display: flex;
   flex: 0 0 140px; 
-   flex-direction: column;       
-  /* background: #f5f5f5; */
+  flex-direction: column;       
   color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -102,7 +101,9 @@ h1 {
   font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  font-weight: bold;
+  font-weight: 800; 
+  font-style: bold;
+  text-align: left;  
 }
 /* TEAM SECTION */
 .team-section {
@@ -119,8 +120,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap;  
 }
 .team-card {
   width: 250px;
@@ -147,8 +147,8 @@ h1 {
    margin-bottom: 0.5rem;
 }
 .circle-img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
