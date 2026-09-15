@@ -1,5 +1,6 @@
 body {
-   background: url('Philadelphia.jpg') center/cover no-repeat;
+  background: url('Philadelphia.jpg') center/cover no-repeat;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 .navbar {
   display: flex;
@@ -220,10 +221,28 @@ p{
   }
   80% {
 
-
   }
   100% {
      opacity: 1;
       transform: translateX(0);
-  }
+  }  
+}
+ @font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
+.nav-links a:focus,
+#bookNow:focus,
+.search-form button:focus,
+.result-card:focus {
+  outline: 3px solid #1db954;
+  outline-offset: 3px;
 }
